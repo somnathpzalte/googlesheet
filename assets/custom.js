@@ -1,0 +1,11 @@
+$(document).ready(function(){
+    $('#btn-add').click(function(){
+        $(this).hide();
+        $('.form-control').val('');
+        $('#userform').slideDown();
+    });
+    $('#btn-cancel').click(function(){
+        $('#btn-add').show();
+        $('#userform').slideUp();
+    });
+});
